@@ -4,8 +4,8 @@ import './App.css';
 function Todo({todo, index, markTodo, removeTodo}){
   return (
     <div className="todo">
-      <span style={{textDecoration: todo.isDone ? 'line-through' : ""}}> {todo.text}</span>
-    <div>
+      <div style={{textDecoration: todo.isDone ? 'line-through' : "", paddingRight: '20px'}}> {todo.text}</div>
+    <div style={{display: 'flex', flex: 1, alignItems: 'flex-end', justifyContent: 'flex-end'}}>
     <button className="outline-success" onClick={()=> markTodo(index)}>√</button>
     <button className="outline-danger" onClick={()=> removeTodo(index)}>x</button>
     </div>
@@ -27,7 +27,7 @@ return (
   <form onSubmit={handleSubmit}>
     <div className="form-group">
       <input type="text" className="input"
-      value={value} placeholder="Add New todo"
+      value={value} placeholder="Add New Todo"
       onChange={e => setValue(e.target.value)}/>
         <button type="submit" className="btn">submit</button>
     </div>

@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.app{
+    width: 60%;
+    margin:auto;
+    padding: 20px;
+    background-color: rgb(25, 5, 136)
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: yellow;
+    font-family: comic sans MS;
+}
+.form{
+    text-align: center;
+}
+
+.input{
+    width: 500px;
+    height: 40px;
+    border:2px solid yellow;
+    padding-left: 30px;
+    margin: auto;
+    font-family: comic sans MS;
+    background-color: whitesmoke;
+}
+
+.form-group{
+    padding-left: 20px;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: rgba(17, 7, 128, 0.671);
+    color: yellow;
+    height: 40px;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    font-family: comic sans MS;
+}
+
+.outline-success{
+    background: transparent;
+    color:green;
+    border:1px solid green;
+    margin: opx 10px;
+    padding: 10px;
+}
+
+.outline-danger{
+    background: transparent;
+    color: red;
+    border: 1px solid red;
+    margin: 0px 10px;
+    padding: 10px;
+}

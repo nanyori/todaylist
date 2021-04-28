@@ -27,7 +27,7 @@ return (
   <form onSubmit={handleSubmit}>
     <div className="form-group">
       <input type="text" className="input"
-      value={value} placeholder="Add New Tool"
+      value={value} placeholder="Add New todo"
       onChange={e => setValue(e.target.value)}/>
         <button type="submit" className="btn">submit</button>
     </div>
@@ -67,7 +67,7 @@ const removeTodo=index => {
 return(
   <div className="app">
     <div className="container">
-      <h1 className="title"> TODO LIST</h1>
+      <h1 className="title"> TODAY LIST</h1>
       <FormTodo addTodo={addTodo}/>
       <div>
         {todos.map((todo,index) => (
